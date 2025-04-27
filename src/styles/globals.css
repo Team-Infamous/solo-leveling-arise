@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #111827;
+  color: white;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+
+/* Combat animations */
+@keyframes attack {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(20px); }
+  100% { transform: translateX(0); }
+}
+
+.attack-animation {
+  animation: attack 0.3s ease-in-out;
+}
+
+@keyframes damage {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; color: red; }
+  100% { opacity: 1; }
+}
+
+.damage-animation {
+  animation: damage 0.5s ease-in-out;
+}
