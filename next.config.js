@@ -2,11 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['solo-leveling-arise.vercel.app'], // Add your production domain later
-  },
-  experimental: {
-    appDir: true,
-    serverComponentsExternalPackages: ['mongoose'],
+    domains: ['solo-leveling-arise.vercel.app'],
   },
   webpack(config) {
     config.experiments = {
